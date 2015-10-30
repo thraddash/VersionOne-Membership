@@ -5,6 +5,7 @@ Usage
 =====
 
 require 'yaml'
+
 require 'rest-client'
 
  
