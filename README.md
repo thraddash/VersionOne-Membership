@@ -1,14 +1,12 @@
 # VersionOne-Membership
-VersionOne Token Access in Ruby
+Get VersionOne Memberlist using Token Access in Ruby
 
-Installation
+Usage
 =====
 
-mkdir config
- v1config_IPW.yml
- 
-mkdir lib
- v1member.rb
+require 'yaml'
+require 'rest-client'
+
  
 Execute app.rb 
   app.rb  
