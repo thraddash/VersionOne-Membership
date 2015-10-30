@@ -1,0 +1,4 @@
+token_id: 
+base_url: https://your_VersionOne_URL
+base_uri: /your_VersionOne_URI
+rest_uri: /rest-1.v1/Data/Member?
