@@ -17,8 +17,7 @@ token = "access_token"
 
 get_member = (RestClient::Request.execute(
   :method => :get,
-  #:url => "https://your_VersionOne_site/rest-1.v1/Data/Member?sel=Name,Email&where=Nickname='some_name'",
-  :url => "https://www14.v1host.com/MacysIncIPWSandbox/rest-1.v1/Data/Member?",
+  :url => "https://your_VersionOne_site/rest-1.v1/Data/Member?sel=Name,Email&where=Nickname='some_name'",
   :payload => '{" "}',
   :headers => {'Authorization' => "Bearer #{token}", :content_type => 'application/xml'}
 ))
