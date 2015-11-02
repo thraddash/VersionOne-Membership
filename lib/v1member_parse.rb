@@ -22,7 +22,7 @@ class V1Connect
       p member['id']
       h = {}
       member.elements.each do |b|
-        p "#{h[b.text.strip] = b['name']}" "#{b.text}"
+        p "#{h[b.text.strip] = b['name']}" "=" "#{b.text}"
       end
     end
   end
