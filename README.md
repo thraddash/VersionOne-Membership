@@ -61,3 +61,35 @@ class V1Connect
   end
 end
 ````
+## member.xml
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Assets total="2426" pageSize="2147483647" pageStart="0">
+<Asset href="/your_versionOne/rest-1.v1/Data/Member/911" id="Member:911">
+    <Attribute name="AssetType">Member</Attribute>
+    <Attribute name="IsCollaborator">false</Attribute>
+    <Relation name="Avatar"/>
+    <Attribute name="SendConversationEmails">true</Attribute>
+    <Attribute name="UsesLicense">true</Attribute>
+    <Attribute name="NotifyViaEmail">true</Attribute>
+    <Relation name="SecurityScope"/>
+    <Relation name="DefaultRole">
+      <Asset href="/your_versionOne/rest-1.v1/Data/Role/4" idref="Role:4"/>
+    </Relation>
+    <Attribute name="Username">team_lead</Attribute>
+    <Attribute name="IsLoginDisabled">false</Attribute>
+    <Attribute name="Phone"/>
+    <Attribute name="Email">hello@email.com</Attribute>
+    <Attribute name="Nickname">Team L</Attribute>
+    <Attribute name="Description"><p>Marketing</p></Attribute>
+    <Attribute name="Name">Team Lead</Attribute>
+    <Attribute name="AssetState">64</Attribute>
+    <Attribute name="SecurityScope.Name"/>
+    <Attribute name="DefaultRole.Name">Role.Name'Team Lead</Attribute>
+    <Relation name="Followers"/>
+    <Attribute name="Followers.Name"/>
+    <Attribute name="Followers.Nickname"/>
+    <Attribute name="Ideas"/>
+  </Asset>
+  </Assets>
+  ````
