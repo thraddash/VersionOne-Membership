@@ -3,7 +3,7 @@ require 'rest-client'
 require 'yaml'
 
 class V1Connect
-  $V1HOST = YAML::load(File.open("./config/v1config_IPW.yml"))
+  $V1HOST = YAML::load(File.open("./config/v1config.yml"))
   def get_memberlist
     @get_member = (RestClient::Request.execute(
       :method => :get,
