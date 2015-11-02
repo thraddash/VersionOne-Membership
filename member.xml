@@ -1,0 +1,84 @@
+```xml
+<Assets total="2426" pageSize="2147483647" pageStart="0">
+<Asset href="/your_versionOne/rest-1.v1/Data/Member/2000" id="Member:2000">
+<Attribute name="AssetType">Member</Attribute>
+<Attribute name="IsCollaborator">false</Attribute>
+<Relation name="Avatar">
+<Asset href="/your_versionOne/rest-1.v1/Data/Image/1143" idref="Image:1143"/>
+</Relation>
+<Attribute name="SendConversationEmails">true</Attribute>
+<Attribute name="UsesLicense">false</Attribute>
+<Attribute name="NotifyViaEmail">true</Attribute>
+<Relation name="SecurityScope"/>
+<Relation name="DefaultRole">
+<Asset href="/your_versionOne/rest-1.v1/Data/Role/1" idref="Role:1"/>
+</Relation>
+<Attribute name="Username">admin_user</Attribute>
+<Attribute name="IsLoginDisabled">false</Attribute>
+<Attribute name="Phone"/>
+<Attribute name="Email">your_email@email.com</Attribute>
+<Attribute name="Nickname">Admin U</Attribute>
+<Attribute name="Description"><p>V1 SystemAdmin</p></Attribute>
+<Attribute name="Name">Administrator</Attribute>
+<Attribute name="AssetState">64</Attribute>
+<Attribute name="SecurityScope.Name"/>
+<Attribute name="DefaultRole.Name">Role.Name'System Admin</Attribute>
+<Relation name="Followers"/>
+<Attribute name="Followers.Name"/>
+<Attribute name="Followers.Nickname"/>
+<Attribute name="Ideas"/>
+</Asset>
+<Asset href="/your_versionOne/rest-1.v1/Data/Member/911" id="Member:911">
+<Attribute name="AssetType">Member</Attribute>
+<Attribute name="IsCollaborator">false</Attribute>
+<Relation name="Avatar"/>
+<Attribute name="SendConversationEmails">true</Attribute>
+<Attribute name="UsesLicense">true</Attribute>
+<Attribute name="NotifyViaEmail">true</Attribute>
+<Relation name="SecurityScope"/>
+<Relation name="DefaultRole">
+<Asset href="/your_versionOne/rest-1.v1/Data/Role/4" idref="Role:4"/>
+</Relation>
+<Attribute name="Username">team_lead</Attribute>
+<Attribute name="IsLoginDisabled">false</Attribute>
+<Attribute name="Phone"/>
+<Attribute name="Email">hello@email.com</Attribute>
+<Attribute name="Nickname">Team L</Attribute>
+<Attribute name="Description"><p>Marketing</p></Attribute>
+<Attribute name="Name">Team Lead</Attribute>
+<Attribute name="AssetState">64</Attribute>
+<Attribute name="SecurityScope.Name"/>
+<Attribute name="DefaultRole.Name">Role.Name'Team Lead</Attribute>
+<Relation name="Followers"/>
+<Attribute name="Followers.Name"/>
+<Attribute name="Followers.Nickname"/>
+<Attribute name="Ideas"/>
+</Asset>
+Asset href="/your_versionOne/rest-1.v1/Data/Member/323" id="Member:323">
+<Attribute name="AssetType">Member</Attribute>
+<Attribute name="IsCollaborator">false</Attribute>
+<Relation name="Avatar"/>
+<Attribute name="SendConversationEmails">true</Attribute>
+<Attribute name="UsesLicense">true</Attribute>
+<Attribute name="NotifyViaEmail">true</Attribute>
+<Relation name="SecurityScope"/>
+<Relation name="DefaultRole">
+<Asset href="/your_versionOne/rest-1.v1/Data/Role/3" idref="Role:3"/>
+</Relation>
+<Attribute name="Username">project_lead</Attribute>
+<Attribute name="IsLoginDisabled">false</Attribute>
+<Attribute name="Phone"/>
+<Attribute name="Email">project_lead@email.com</Attribute>
+<Attribute name="Nickname">Project L</Attribute>
+<Attribute name="Description"/>
+<Attribute name="Name">Project Lead</Attribute>
+<Attribute name="AssetState">64</Attribute>
+<Attribute name="SecurityScope.Name"/>
+<Attribute name="DefaultRole.Name">Role.Name'Project Lead</Attribute>
+<Relation name="Followers"/>
+<Attribute name="Followers.Name"/>
+<Attribute name="Followers.Nickname"/>
+<Attribute name="Ideas"/>
+</Asset>
+</Assets>
+```
