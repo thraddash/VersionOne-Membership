@@ -12,28 +12,27 @@ Execute app.rb
 ````ruby
 token = "token_access"
 
-get_member = (RestClient::Request.execute(
+g=get_member = (RestClient::Request.execute(
   :method => :get,
   :url => "https://your_VersionOne_site/rest-1.v1/Data/Member?sel=Name,Email&where=Nickname='some_name'",
   :payload => '{" "}',
-  :headers => {'Authorization' => "Bearer #{token}", :content_type => 'application/xml'}
-  ))
-end
-p "#{get_member}"
+  :headers => {'Authorization' => "Bearer #{token}", :content_type => 'application/xml'}  
+))
+p g.body
 ````
 ## Example (RestClient POST)
 ###### static example, update member id "53166" to a relevant user
 ````ruby
 token = "token_access"
 
-post_member = (RestClient::Request.execute(
+p=post_member = (RestClient::Request.execute(
   :method => :post,
   :url => "your_VersionOne_site/rest-1.v1/Data/Member/53166",
   :payload => "<Asset><Attribute name='Email' act='set'>working@test.com</Attribute></Asset>",
   :headers => {'Authorization' => "Bearer #{token}", :content_type => 'application/xml'}
-  ))
-end
-p "#{post_member}"
+))
+
+p p.body
 ````
 ## v1config.yml
 ````yaml
