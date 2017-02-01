@@ -14,7 +14,7 @@ token = "token_access"
 
 g=get_member = (RestClient::Request.execute(
   :method => :get,
-  :url => URI.encode("https://your_VersionOne_site/rest-1.v1/Data/Member?sel=Name,Email&where=Nickname='some_name'"),
+  :url => URI.encode("https://your_VersionOne_site/rest-1.v1/Data/Member?sel=Name,Email&Page=5,1"),
   :payload => '{" "}',
   :headers => {'Authorization' => "Bearer #{token}", :content_type => 'application/xml'}  
 ))
