@@ -14,7 +14,7 @@ token = "token_access"
 
 g=get_member = (RestClient::Request.execute(
   :method => :get,
-  :url => "https://your_VersionOne_site/rest-1.v1/Data/Member?sel=Name,Email&where=Nickname='some_name'",
+  :url => URI.encode("https://your_VersionOne_site/rest-1.v1/Data/Member?sel=Name,Email&where=Nickname='some_name'"),
   :payload => '{" "}',
   :headers => {'Authorization' => "Bearer #{token}", :content_type => 'application/xml'}  
 ))
@@ -27,7 +27,7 @@ token = "token_access"
 
 p=post_member = (RestClient::Request.execute(
   :method => :post,
-  :url => "your_VersionOne_site/rest-1.v1/Data/Member/53166",
+  :url => URI.encode("your_VersionOne_site/rest-1.v1/Data/Member/53166"),
   :payload => "<Asset><Attribute name='Email' act='set'>working@test.com</Attribute></Asset>",
   :headers => {'Authorization' => "Bearer #{token}", :content_type => 'application/xml'}
 ))
@@ -52,7 +52,7 @@ class V1Connect
   def get_memberlist
     @get_member = (RestClient::Request.execute(
       :method => :get,
-      :url => "#{$V1HOST['base_url']}#{$V1HOST['base_uri']}#{$V1HOST['rest_uri']}",
+      :url => URI.encode("#{$V1HOST['base_url']}#{$V1HOST['base_uri']}#{$V1HOST['rest_uri']}"),
       :payload => '{" "}',
       :headers => {'Authorization' => "Bearer #{$V1HOST['token_id']}", :content_type => 'application/xml'}
     ))
